@@ -1,0 +1,30 @@
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+.venv
+
+# Environment variables
+.env
+
+# SQLite databases and backups
+*.db
+*.sqlite3
+backups/
+
+# Logs
+logs/
+*.log
+
+# Sandbox or scratch files
+sandbox/
+
+# Editor configs
+.vscode/
+.DS_Store
+desktop.ini
