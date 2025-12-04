@@ -25,7 +25,7 @@ def get_connection() -> Connection:
         log.debug("Opened DB connection: %s", DB_PATH)
         return conn
     except Exception as e:
-        log.exception("Failed to open DB connection")
+        log.exception(f"Failed to open DB connection: {e}")
         raise
 
 
@@ -36,5 +36,5 @@ def init_db():
             cur.executescript(SCHEMA)
             log.info("Database initialized")
     except Exception as e:
-        log.exception("Failed to initialize database")
+        log.exception(f"Failed to initialize database: {e}")
         raise
